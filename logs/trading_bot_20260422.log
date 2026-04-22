@@ -1,0 +1,203 @@
+2026-04-22 00:10:14 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:10:14 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:10:14 | DEBUG    | client:116 | REQUEST  GET https://testnet.binancefuture.com/fapi/v1/time  params={}
+2026-04-22 00:10:16 | DEBUG    | client:134 | RESPONSE GET https://testnet.binancefuture.com/fapi/v1/time  status=200  body={"serverTime":1776796817779}
+2026-04-22 00:10:29 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:10:29 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:10:29 | INFO     | client:207 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 00:10:29 | DEBUG    | client:116 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776796829665, 'recvWindow': 5000}
+2026-04-22 00:10:30 | DEBUG    | client:134 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:10:30 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:10:30 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:17:44 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:17:44 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:17:44 | DEBUG    | client:117 | REQUEST  GET https://testnet.binancefuture.com/fapi/v1/time  params={}
+2026-04-22 00:17:45 | DEBUG    | client:135 | RESPONSE GET https://testnet.binancefuture.com/fapi/v1/time  status=200  body={"serverTime":1776797266372}
+2026-04-22 00:18:18 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:18:18 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:18:18 | INFO     | client:208 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 00:18:18 | DEBUG    | client:117 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776797298337, 'recvWindow': 5000}
+2026-04-22 00:18:20 | DEBUG    | client:135 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:18:20 | ERROR    | client:147 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:18:20 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:18:33 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:18:33 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:18:33 | INFO     | client:208 | Placing SELL LIMIT order — symbol=BTCUSDT  qty=0.001  price=100000.0  stopPrice=None
+2026-04-22 00:18:33 | DEBUG    | client:117 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776797313807, 'recvWindow': 5000}
+2026-04-22 00:18:34 | DEBUG    | client:135 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:18:34 | ERROR    | client:147 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:18:34 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:18:46 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:18:46 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-22 00:18:46 | DEBUG    | client:117 | REQUEST  GET https://testnet.binancefuture.com/fapi/v2/account  params={'timestamp': 1776797326383, 'recvWindow': 5000}
+2026-04-22 00:18:47 | DEBUG    | client:135 | RESPONSE GET https://testnet.binancefuture.com/fapi/v2/account  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:18:47 | ERROR    | client:147 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:18:47 | ERROR    | cli:178 | Account fetch failed: Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:20:31 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:20:31 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:20:31 | DEBUG    | client:117 | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/time  params={}
+2026-04-22 00:20:34 | DEBUG    | client:135 | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/time  status=200  body={"serverTime":1776797435693}
+2026-04-22 00:21:13 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:21:13 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:21:13 | INFO     | client:208 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 00:21:13 | DEBUG    | client:117 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776797473874, 'recvWindow': 5000}
+2026-04-22 00:21:14 | DEBUG    | client:135 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:21:14 | ERROR    | client:147 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:21:14 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:24:41 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:24:41 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:24:41 | INFO     | client:208 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 00:24:41 | DEBUG    | client:117 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776797681971, 'recvWindow': 5000}
+2026-04-22 00:24:43 | DEBUG    | client:135 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-22 00:24:43 | ERROR    | client:147 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-22 00:24:43 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-22 00:49:12 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:49:12 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:49:12 | DEBUG    | client:117 | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/time  params={}
+2026-04-22 00:49:13 | DEBUG    | client:135 | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/time  status=200  body={"serverTime":1776799153743}
+2026-04-22 00:49:23 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:49:23 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:49:23 | INFO     | client:208 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 00:49:23 | DEBUG    | client:117 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776799163369, 'recvWindow': 5000}
+2026-04-22 00:49:24 | DEBUG    | client:135 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=200  body={"orderId":13058701372,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"xU0Nf1BBx7Ew18P3u6WKb7","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-04-22 00:49:24 | INFO     | client:219 | Order placed successfully — orderId=13058701372  status=NEW
+2026-04-22 00:50:07 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:50:07 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:50:07 | INFO     | client:208 | Placing SELL LIMIT order — symbol=BTCUSDT  qty=0.001  price=100000.0  stopPrice=None
+2026-04-22 00:50:07 | DEBUG    | client:117 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776799207759, 'recvWindow': 5000}
+2026-04-22 00:50:08 | DEBUG    | client:135 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=200  body={"orderId":13058703219,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"g3pOy5MbciuFFN2rSTc0QS","price":"100000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"u
+2026-04-22 00:50:08 | INFO     | client:219 | Order placed successfully — orderId=13058703219  status=NEW
+2026-04-22 00:50:22 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:50:22 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:50:22 | DEBUG    | client:117 | REQUEST  GET https://demo-fapi.binance.com/fapi/v2/account  params={'timestamp': 1776799222388, 'recvWindow': 5000}
+2026-04-22 00:50:23 | DEBUG    | client:135 | RESPONSE GET https://demo-fapi.binance.com/fapi/v2/account  status=200  body={"feeTier":0,"canTrade":true,"canDeposit":true,"canWithdraw":true,"feeBurn":true,"tradeGroupId":-1,"updateTime":0,"multiAssetsMargin":false,"totalInitialMargin":"3.78136000","totalMaintMargin":"0.30250880","totalWalletBalance":"4999.96976136","totalUnrealizedProfit":"0.03060000","totalMarginBalance":"5000.00036136","totalPositionInitialMargin":"3.78136000","totalOpenOrderInitialMargin":"0.00000000","totalCrossWalletBalance":"4999.96976136","totalCrossUnPnl":"0.03060000","availableBalance":"4996.
+2026-04-22 00:50:35 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:50:35 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:50:35 | DEBUG    | client:117 | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/openOrders  params={'symbol': 'BTCUSDT', 'timestamp': 1776799235702, 'recvWindow': 5000}
+2026-04-22 00:50:36 | DEBUG    | client:135 | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/openOrders  status=200  body=[{"orderId":13058703219,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"g3pOy5MbciuFFN2rSTc0QS","price":"100000","avgPrice":"0","origQty":"0.0010","executedQty":"0","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"time":1776799209571,"updateTime"
+2026-04-22 00:51:00 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:51:00 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:51:00 | ERROR    | orders:95 | Validation failed: Price is required for STOP_MARKET orders.
+2026-04-22 00:54:46 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 00:54:46 | INFO     | client:66 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 00:54:46 | INFO     | client:208 | Placing BUY STOP_MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=95000.0
+2026-04-22 00:54:46 | DEBUG    | client:117 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'timestamp': 1776799486260, 'recvWindow': 5000}
+2026-04-22 00:54:47 | DEBUG    | client:135 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 00:54:47 | ERROR    | client:147 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 00:54:47 | ERROR    | orders:112 | Order failed — Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 01:03:41 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 01:03:41 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 01:03:41 | DEBUG    | client:116 | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/time  params={}
+2026-04-22 01:03:42 | DEBUG    | client:134 | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/time  status=200  body={"serverTime":1776800023532}
+2026-04-22 01:03:55 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 01:03:55 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 01:03:55 | INFO     | client:206 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 01:03:55 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776800035191, 'recvWindow': 5000}
+2026-04-22 01:03:56 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=200  body={"orderId":13058737336,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"WLw56tPd8XIMKKAilGO1ju","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-04-22 01:03:56 | INFO     | client:217 | Order placed successfully — orderId=13058737336  status=NEW
+2026-04-22 01:04:10 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 01:04:10 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 01:04:10 | INFO     | client:206 | Placing BUY STOP_MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=95000.0
+2026-04-22 01:04:10 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'timestamp': 1776800050603, 'recvWindow': 5000}
+2026-04-22 01:04:11 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 01:04:11 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 01:04:11 | ERROR    | orders:112 | Order failed — Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:40:03 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:40:03 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:40:03 | DEBUG    | client:116 | REQUEST  GET https://demo-fapi.binance.com/fapi/v1/time  params={}
+2026-04-22 10:40:05 | DEBUG    | client:134 | RESPONSE GET https://demo-fapi.binance.com/fapi/v1/time  status=200  body={"serverTime":1776834605504}
+2026-04-22 10:40:17 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:40:17 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:40:17 | INFO     | client:206 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-22 10:40:17 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776834617740, 'recvWindow': 5000}
+2026-04-22 10:40:18 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=200  body={"orderId":13060170137,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"e4X6rhozBEE9PNq9jOj1hB","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-04-22 10:40:18 | INFO     | client:217 | Order placed successfully — orderId=13060170137  status=NEW
+2026-04-22 10:40:36 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:40:36 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:40:36 | INFO     | client:206 | Placing SELL LIMIT order — symbol=BTCUSDT  qty=0.001  price=100000.0  stopPrice=None
+2026-04-22 10:40:36 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776834636778, 'recvWindow': 5000}
+2026-04-22 10:40:37 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=200  body={"orderId":13060171046,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Pf4yXS0aazQliTJnncswxB","price":"100000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"u
+2026-04-22 10:40:37 | INFO     | client:217 | Order placed successfully — orderId=13060171046  status=NEW
+2026-04-22 10:40:49 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:40:49 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:40:49 | DEBUG    | client:116 | REQUEST  GET https://demo-fapi.binance.com/fapi/v2/account  params={'timestamp': 1776834649331, 'recvWindow': 5000}
+2026-04-22 10:40:50 | DEBUG    | client:134 | RESPONSE GET https://demo-fapi.binance.com/fapi/v2/account  status=200  body={"feeTier":0,"canTrade":true,"canDeposit":true,"canWithdraw":true,"feeBurn":true,"tradeGroupId":-1,"updateTime":0,"multiAssetsMargin":false,"totalInitialMargin":"11.62504178","totalMaintMargin":"0.93000334","totalWalletBalance":"4999.90530517","totalUnrealizedProfit":"3.69023554","totalMarginBalance":"5003.59554071","totalPositionInitialMargin":"11.62504178","totalOpenOrderInitialMargin":"0.00000000","totalCrossWalletBalance":"4999.90530517","totalCrossUnPnl":"3.69023554","availableBalance":"499
+2026-04-22 10:40:58 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:40:58 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:41:12 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:41:12 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:41:12 | INFO     | client:206 | Placing BUY STOP_MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=95000.0
+2026-04-22 10:41:12 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'timestamp': 1776834672277, 'recvWindow': 5000}
+2026-04-22 10:41:13 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:41:13 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:41:13 | ERROR    | orders:112 | Order failed — Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:45:06 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:45:06 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:45:06 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776834906754, 'recvWindow': 5000}
+2026-04-22 10:45:07 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:45:07 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:45:07 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order/algo/stop  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776834907474, 'recvWindow': 5000}
+2026-04-22 10:45:07 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order/algo/stop  status=404  body={"code":-5000,"msg":"Path /fapi/v1/order/algo/stop, Method POST is invalid"}
+2026-04-22 10:45:07 | ERROR    | client:145 | API ERROR  code=-5000  msg=Path /fapi/v1/order/algo/stop, Method POST is invalid
+2026-04-22 10:45:07 | ERROR    | orders:112 | Order failed — Binance API error -5000: Path /fapi/v1/order/algo/stop, Method POST is invalid
+2026-04-22 10:46:50 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:46:50 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:46:50 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835010915, 'recvWindow': 5000}
+2026-04-22 10:46:51 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:46:51 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:46:51 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order/algo/stopOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835011700, 'recvWindow': 5000}
+2026-04-22 10:46:51 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order/algo/stopOrder  status=404  body={"code":-5000,"msg":"Path /fapi/v1/order/algo/stopOrder, Method POST is invalid"}
+2026-04-22 10:46:51 | ERROR    | client:145 | API ERROR  code=-5000  msg=Path /fapi/v1/order/algo/stopOrder, Method POST is invalid
+2026-04-22 10:46:51 | ERROR    | orders:112 | Order failed — Binance API error -5000: Path /fapi/v1/order/algo/stopOrder, Method POST is invalid
+2026-04-22 10:48:15 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:48:15 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:48:15 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835095863, 'recvWindow': 5000}
+2026-04-22 10:48:16 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:48:16 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:48:16 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835096652, 'recvWindow': 5000}
+2026-04-22 10:48:16 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=400  body={"code":-1102,"msg":"Mandatory parameter 'algotype' was not sent, was empty/null, or malformed."}
+2026-04-22 10:48:16 | ERROR    | client:145 | API ERROR  code=-1102  msg=Mandatory parameter 'algotype' was not sent, was empty/null, or malformed.
+2026-04-22 10:48:16 | ERROR    | orders:112 | Order failed — Binance API error -1102: Mandatory parameter 'algotype' was not sent, was empty/null, or malformed.
+2026-04-22 10:49:22 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:49:22 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:49:22 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835162807, 'recvWindow': 5000}
+2026-04-22 10:49:23 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:49:23 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:49:23 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'algoType': 'STOP', 'timestamp': 1776835163666, 'recvWindow': 5000}
+2026-04-22 10:49:23 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=400  body={"code":-4500,"msg":"Invalid algoType."}
+2026-04-22 10:49:23 | ERROR    | client:145 | API ERROR  code=-4500  msg=Invalid algoType.
+2026-04-22 10:49:23 | ERROR    | orders:112 | Order failed — Binance API error -4500: Invalid algoType.
+2026-04-22 10:50:47 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:50:47 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:50:47 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835247798, 'recvWindow': 5000}
+2026-04-22 10:50:48 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:50:48 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:50:48 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.001, 'triggerPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'algoType': 'CONDITIONAL', 'orderType': 'STOP_MARKET', 'timeInForce': 'GTC', 'timestamp': 1776835248713, 'recvWindow': 5000}
+2026-04-22 10:50:48 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=400  body={"code":-1102,"msg":"Mandatory parameter 'type' was not sent, was empty/null, or malformed."}
+2026-04-22 10:50:48 | ERROR    | client:145 | API ERROR  code=-1102  msg=Mandatory parameter 'type' was not sent, was empty/null, or malformed.
+2026-04-22 10:50:48 | ERROR    | orders:112 | Order failed — Binance API error -1102: Mandatory parameter 'type' was not sent, was empty/null, or malformed.
+2026-04-22 10:52:06 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:52:06 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:52:06 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835326213, 'recvWindow': 5000}
+2026-04-22 10:52:07 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:52:07 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:52:07 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.001, 'triggerPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'algoType': 'CONDITIONAL', 'timeInForce': 'GTC', 'timestamp': 1776835327058, 'recvWindow': 5000}
+2026-04-22 10:52:07 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=400  body={"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2026-04-22 10:52:07 | ERROR    | client:145 | API ERROR  code=-4164  msg=Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-04-22 10:52:07 | ERROR    | orders:112 | Order failed — Binance API error -4164: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-04-22 10:52:46 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:52:47 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:52:47 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.002, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835367022, 'recvWindow': 5000}
+2026-04-22 10:52:48 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:52:48 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:52:48 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.002, 'triggerPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'algoType': 'CONDITIONAL', 'timeInForce': 'GTC', 'timestamp': 1776835368011, 'recvWindow': 5000}
+2026-04-22 10:52:48 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=200  body={"algoId":1000000054772408,"clientAlgoId":"DWEehacycwDq04zMVYSWZw","algoType":"CONDITIONAL","orderType":"STOP_MARKET","symbol":"BTCUSDT","side":"BUY","positionSide":"BOTH","timeInForce":"GTC","quantity":"0.0020","algoStatus":"NEW","triggerPrice":"95000.00","price":"0.00","icebergQuantity":null,"selfTradePreventionMode":"EXPIRE_MAKER","workingType":"CONTRACT_PRICE","priceMatch":"NONE","closePosition":false,"priceProtect":false,"reduceOnly":false,"createTime":1776835368113,"updateTime":17768353681
+2026-04-22 10:52:48 | INFO     | client:214 | Order OK via algo orderId=None
+2026-04-22 10:56:48 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260422.log
+2026-04-22 10:56:48 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://demo-fapi.binance.com
+2026-04-22 10:56:48 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.002, 'stopPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1776835608269, 'recvWindow': 5000}
+2026-04-22 10:56:49 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/order  status=400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-04-22 10:56:49 | ERROR    | client:145 | API ERROR  code=-4120  msg=Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-22 10:56:49 | DEBUG    | client:116 | REQUEST  POST https://demo-fapi.binance.com/fapi/v1/algoOrder  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.002, 'triggerPrice': 95000.0, 'workingType': 'CONTRACT_PRICE', 'algoType': 'CONDITIONAL', 'timeInForce': 'GTC', 'timestamp': 1776835609001, 'recvWindow': 5000}
+2026-04-22 10:56:49 | DEBUG    | client:134 | RESPONSE POST https://demo-fapi.binance.com/fapi/v1/algoOrder  status=200  body={"algoId":1000000054777563,"clientAlgoId":"wRxK3D6gM3VKhGEHkdB1de","algoType":"CONDITIONAL","orderType":"STOP_MARKET","symbol":"BTCUSDT","side":"BUY","positionSide":"BOTH","timeInForce":"GTC","quantity":"0.0020","algoStatus":"NEW","triggerPrice":"95000.00","price":"0.00","icebergQuantity":null,"selfTradePreventionMode":"EXPIRE_MAKER","workingType":"CONTRACT_PRICE","priceMatch":"NONE","closePosition":false,"priceProtect":false,"reduceOnly":false,"createTime":1776835609105,"updateTime":17768356091
+2026-04-22 10:56:49 | INFO     | client:214 | Order OK via algo orderId=None

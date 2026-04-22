@@ -1,0 +1,50 @@
+2026-04-21 11:47:11 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:47:11 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:47:11 | DEBUG    | client:116 | REQUEST  GET https://testnet.binancefuture.com/fapi/v1/time  params={}
+2026-04-21 11:47:12 | DEBUG    | client:134 | RESPONSE GET https://testnet.binancefuture.com/fapi/v1/time  status=200  body={"serverTime":1776752232097}
+2026-04-21 11:47:30 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:47:30 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:47:30 | INFO     | client:207 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-21 11:47:30 | DEBUG    | client:116 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776752250370, 'recvWindow': 5000}
+2026-04-21 11:47:31 | DEBUG    | client:134 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 11:47:31 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-21 11:47:31 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-21 11:47:44 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:47:44 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:47:44 | INFO     | client:207 | Placing SELL LIMIT order — symbol=BTCUSDT  qty=0.001  price=100000.0  stopPrice=None
+2026-04-21 11:47:44 | DEBUG    | client:116 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776752264088, 'recvWindow': 5000}
+2026-04-21 11:47:45 | DEBUG    | client:134 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 11:47:45 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-21 11:47:45 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-21 11:48:28 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:48:28 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:48:28 | ERROR    | orders:95 | Validation failed: Price is required for STOP_MARKET orders.
+2026-04-21 11:48:42 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:48:42 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:48:42 | DEBUG    | client:116 | REQUEST  GET https://testnet.binancefuture.com/fapi/v2/account  params={'timestamp': 1776752322516, 'recvWindow': 5000}
+2026-04-21 11:48:43 | DEBUG    | client:134 | RESPONSE GET https://testnet.binancefuture.com/fapi/v2/account  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 11:48:43 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-21 11:48:43 | ERROR    | cli:178 | Account fetch failed: Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-21 11:48:57 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:48:57 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:48:57 | DEBUG    | client:116 | REQUEST  GET https://testnet.binancefuture.com/fapi/v1/openOrders  params={'symbol': 'BTCUSDT', 'timestamp': 1776752337450, 'recvWindow': 5000}
+2026-04-21 11:48:58 | DEBUG    | client:134 | RESPONSE GET https://testnet.binancefuture.com/fapi/v1/openOrders  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 11:48:58 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-21 11:48:58 | ERROR    | cli:139 | Failed to fetch open orders: Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-21 11:58:22 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:58:22 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:58:22 | DEBUG    | client:116 | REQUEST  GET https://testnet.binancefuture.com/fapi/v1/time  params={}
+2026-04-21 11:58:23 | DEBUG    | client:134 | RESPONSE GET https://testnet.binancefuture.com/fapi/v1/time  status=200  body={"serverTime":1776752903537}
+2026-04-21 11:58:38 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:58:38 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:58:38 | INFO     | client:207 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-21 11:58:38 | DEBUG    | client:116 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776752918972, 'recvWindow': 5000}
+2026-04-21 11:58:38 | ERROR    | client:131 | CONNECTION ERROR  POST https://testnet.binancefuture.com/fapi/v1/order — HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v1/order (Caused by NameResolutionError("HTTPSConnection(host='testnet.binancefuture.com', port=443): Failed to resolve 'testnet.binancefuture.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-21 11:58:38 | ERROR    | orders:116 | Network error — Connection error: HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v1/order (Caused by NameResolutionError("HTTPSConnection(host='testnet.binancefuture.com', port=443): Failed to resolve 'testnet.binancefuture.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-21 11:59:09 | INFO     | logging_config:50 | Logger initialised — writing to logs\trading_bot_20260421.log
+2026-04-21 11:59:09 | INFO     | client:65 | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com
+2026-04-21 11:59:09 | INFO     | client:207 | Placing BUY MARKET order — symbol=BTCUSDT  qty=0.001  price=None  stopPrice=None
+2026-04-21 11:59:09 | DEBUG    | client:116 | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776752949899, 'recvWindow': 5000}
+2026-04-21 11:59:10 | DEBUG    | client:134 | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order  status=401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 11:59:10 | ERROR    | client:146 | API ERROR  code=-2015  msg=Invalid API-key, IP, or permissions for action
+2026-04-21 11:59:10 | ERROR    | orders:112 | Order failed — Binance API error -2015: Invalid API-key, IP, or permissions for action
